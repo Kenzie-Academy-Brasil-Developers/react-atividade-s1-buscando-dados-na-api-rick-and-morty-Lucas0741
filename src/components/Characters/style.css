@@ -1,0 +1,27 @@
+.titulo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: calc(14px + 2vmin);
+  font-style: italic;
+  color: darkblue;
+}
+
+.container--card {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  .titulo {
+    font-size: calc(18px + 2vmin);
+  }
+
+  .container--card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
